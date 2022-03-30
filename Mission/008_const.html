@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //cons는 바뀌면 안될 때
+        const name = "박주아";
+        const year = 2001;
+        const month = 12;
+        const day = 7;
+        let height = 170;
+
+        let adult = "미성년자";
+        let age;
+        console.log(adult);
+
+        let myDate = new Date();
+        console.log(myDate);
+        let currentYear = myDate.getFullYear();
+        console.log(currentYear);
+
+        age = currentYear - year + 1;
+
+        if(age < 20){
+            adult = "미성년자";
+        } else{
+            adult = "성인";
+        }
+
+        document.write(name + "님 당신은" + year + "년" + month + "월" + day + "일에 태어났습니다.<br>");
+        document.write(currentYear + "년 현재 당신의 키는" + height + "cm입니다.<br>");
+        document.write("당신은 현재 " + (currentYear - year) + "살이며, 당신은 " + adult + "입니다");
+    </script>
+</head>
+<body>
+    
+
+
+</body>
+</html>
